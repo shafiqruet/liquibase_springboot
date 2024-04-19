@@ -31,5 +31,7 @@ public class Department {
     private String anotherr;
     @Column(name="khansoft")
     private String khansoft;
+    @Column(name="niyaz")
+    private String niyaz;
 
 }
