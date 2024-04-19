@@ -25,4 +25,7 @@ public class Group {
     @Column(unique = true, length = 500)
     private String description;
 
+    @Column(unique = true, length = 500)
+    private String title;
+
 }
