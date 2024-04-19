@@ -23,9 +23,13 @@ public class Department {
     private String addd;
     @Column(name="ok")
     private String ok;
-
     @Column(name="shafiq")
     private String shafiq;
+    @Column(name="shuvoo")
+    private String shuvoo;
+    @Column(name="anotherr")
+    private String anotherr;
+    @Column(name="khansoft")
+    private String khansoft;
 
-   
 }
