@@ -1,6 +1,5 @@
 package com.zack.example.entity;
 
-import java.time.OffsetDateTime;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -24,5 +23,21 @@ public class Group {
 
     @Column(unique = true, length = 500)
     private String description;
+
+    @Column(unique = true, length = 500)
+    private String title;
+
+    @Column(unique = true, length = 500)
+    private String descrip;
+
+    @Column(unique = true, length = 500)
+    private String age;
+
+    @Column(unique = true, length = 500)
+    private String agelimit;
+    @Column(unique = true, length = 500)
+    private String ravi;
+    @Column(unique = true, length = 500)
+    private String rahul;
 
 }

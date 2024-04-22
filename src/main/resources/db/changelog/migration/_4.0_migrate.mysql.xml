@@ -1,0 +1,41 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="rayhan (generated)" id="1713528631747-11">
+        <addColumn tableName="groups">
+            <column name="ravi" type="varchar(500)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="rayhan (generated)" id="1713528631747-12">
+        <addUniqueConstraint columnNames="ravi" constraintName="UC_GROUPSRAVI_COL" tableName="groups"/>
+    </changeSet>
+    <changeSet author="rayhan (generated)" id="1713528631747-1">
+        <dropUniqueConstraint constraintName="UC_GROUPSAGELIMIT_COL" tableName="groups"/>
+    </changeSet>
+    <changeSet author="rayhan (generated)" id="1713528631747-2">
+        <addUniqueConstraint columnNames="agelimit" constraintName="UC_GROUPSAGELIMIT_COL" tableName="groups"/>
+    </changeSet>
+    <changeSet author="rayhan (generated)" id="1713528631747-3">
+        <dropUniqueConstraint constraintName="UC_GROUPSDESCRIPTION_COL" tableName="groups"/>
+    </changeSet>
+    <changeSet author="rayhan (generated)" id="1713528631747-4">
+        <addUniqueConstraint columnNames="description" constraintName="UC_GROUPSDESCRIPTION_COL" tableName="groups"/>
+    </changeSet>
+    <changeSet author="rayhan (generated)" id="1713528631747-5">
+        <dropUniqueConstraint constraintName="UC_GROUPSDESCRIP_COL" tableName="groups"/>
+    </changeSet>
+    <changeSet author="rayhan (generated)" id="1713528631747-6">
+        <addUniqueConstraint columnNames="descrip" constraintName="UC_GROUPSDESCRIP_COL" tableName="groups"/>
+    </changeSet>
+    <changeSet author="rayhan (generated)" id="1713528631747-7">
+        <dropUniqueConstraint constraintName="UC_GROUPSNAME_COL" tableName="groups"/>
+    </changeSet>
+    <changeSet author="rayhan (generated)" id="1713528631747-8">
+        <addUniqueConstraint columnNames="name" constraintName="UC_GROUPSNAME_COL" tableName="groups"/>
+    </changeSet>
+    <changeSet author="rayhan (generated)" id="1713528631747-9">
+        <dropUniqueConstraint constraintName="UC_GROUPSTITLE_COL" tableName="groups"/>
+    </changeSet>
+    <changeSet author="rayhan (generated)" id="1713528631747-10">
+        <addUniqueConstraint columnNames="title" constraintName="UC_GROUPSTITLE_COL" tableName="groups"/>
+    </changeSet>
+</databaseChangeLog>
